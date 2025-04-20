@@ -18,6 +18,7 @@ const CreateFlowScreen: React.FC = () => {
 
     return (
         <View style={styles.container}>
+            
             <Text style={styles.title}>Build Your Flow</Text>
             <Text>Trigger: {flow.trigger}</Text>
             <Text>Actions: {flow.actions.join(', ')}</Text>

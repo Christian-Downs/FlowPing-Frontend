@@ -9,6 +9,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>FlowPing</Text>
+      <Button title="View All Flows" onPress={() => navigation.navigate('Flows')} />
       <Button title="Create New Flow" onPress={() => navigation.navigate('Create Flow')} />
       <Button title = "TEST" onPress={()=>navigation.navigate('Testing')} />
     </View>

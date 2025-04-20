@@ -7,12 +7,14 @@ import { StyleSheet, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import CreateFlowScreen from './src/screens/CreateFlowScreen';
 import Viewport from './src/screens/DragableTest';
+import FlowsScreen from './src/screens/FlowsScreen';
 
 
 type RootStackParamList = {
   FlowPing: undefined;
   'Create Flow': undefined;
   'Testing':undefined;
+  'Flows':undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -24,6 +26,7 @@ export default function App() {
         <Stack.Screen name ="Testing" component={Viewport} />
         <Stack.Screen name="FlowPing" component={HomeScreen} />
         <Stack.Screen name="Create Flow" component={CreateFlowScreen} />
+        <Stack.Screen name="Flows" component={FlowsScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
